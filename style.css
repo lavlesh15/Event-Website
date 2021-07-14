@@ -1,0 +1,754 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html
+{
+    width: fit-content;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/confett.jpg');
+    background-position:bottom;
+    z-index: -1;
+    height: 100%;
+    background-size: cover;
+}
+
+.navbar
+{
+    height: 130px;
+    width: 100vw;
+    /* border: 1px solid red; */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.navbar .nav_left
+{
+    height: 130px;
+    width: 20%;
+    /* border: 1px solid blue; */
+    margin-top: -30px;
+    display: flex;
+    color: whitesmoke;
+}
+ 
+.nav_left .logoimg
+{
+    height: 120px;
+    width: 150px;
+}
+
+.nav_left h3
+{
+    padding-top: 50px;
+    font-size: 30px;
+    /* text-shadow: 1px 1px 2px gold; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar .mid
+{
+    width: 60%;
+    height: 130px;
+    /* border: 1px solid orange; */
+}
+
+.mid ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    list-style-type: none;
+
+}
+
+.mid a
+{
+    text-decoration:none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px goldenrod;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.mid a:hover
+{
+    color: goldenrod;
+
+}
+
+.navbar .nav_right 
+{
+    width: 20%;
+    height: 130px;
+    /* border: 1px solid pink; */
+   
+}
+
+.nav_right p
+{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 130px;
+    font-size: 25px;
+}
+
+.nav_right a
+{
+    color: whitesmoke ;
+    text-shadow: 1px 1px 2px gray;
+    padding-right: 40px;
+
+}
+
+
+
+/* Heading Division Section  */
+
+header .head1
+{
+    height: 70vh;
+    width: 90vw;
+    /* border: 1px solid blue; */
+    margin-top: 25px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head1 .head1_left
+{
+    height: 350px;
+    width: 600px;
+    /* border: 1px solid orange; */
+    margin-left: 10px;
+    margin-top:50px;
+    display: flex;
+}
+
+.head1_left p
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    padding:10px;
+    writing-mode:vertical-rl;
+    font-size: 21px;
+    background-color:;
+    height: fit-content;
+}
+
+.head1_left .days
+{
+    height: 170px;
+    width: 130px;
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px black;
+    padding: 5px;
+    /* font-size: 45px; */
+}
+
+
+.head1 .head1_right
+{
+    height: 60vh;
+    margin-top: 20px;
+    margin-left:100px;
+    width: 50vw;
+    /* border: 1px solid green; */
+    color: whitesmoke;
+}
+
+.head1_right h1
+{
+    font-family: 'Lobster', cursive;
+    color: #F56040;
+    font-size: 45px;
+    padding-top: 10px;
+    text-shadow: 2px 1px 2px  #F77737;
+    text-align: center;
+}
+
+.head1_right .venue
+{
+    height: 43vh;
+    width: 40vw;
+    border-right: 3px solid darkcyan;
+    border-left: 3px solid darkcyan;
+    border-bottom: 3px solid darkcyan;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.venue h2{
+    text-align: center;
+    font-size: 65px;
+    padding-top: 40px;
+    font-family: 'Zilla Slab', serif;
+    text-shadow: 2px 1px 3px goldenrod;
+}
+
+.venue p
+{
+ background-color: darkcyan;
+ width: fit-content;
+ margin-left: 90px;
+ font-size: 18px;
+ padding: 2px 10px;
+ margin-top: 30px;
+
+
+}
+
+.venue .time
+{
+    height: 30px;
+    width: 23vw;
+    background: whitesmoke;
+    margin-top: 40px;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 2px goldenrod; */
+    color: maroon;
+    font-weight: bolder;
+    margin-left: 130px;
+    display: grid;
+    place-items: center;
+    
+}
+
+.time h6
+{
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+    word-spacing: 3px;
+    padding-top: 3px;
+}
+
+.head1_left .count 
+{
+    height: 10vh;
+    width: 40vw;
+    margin-right: 80px;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 4px gray;
+    border-radius:8px;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    text-shadow: 1px 2px 2px goldenrod;
+    margin-top: 250px;
+    word-spacing: 10px;
+    padding: 5px 10px;
+
+
+}
+
+
+/* Register Div  */
+
+.container
+{
+    /* border: 1px solid red; */
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+   
+}
+
+.container .left_form
+{
+    width: 60%;
+    height: 400px;
+    /* border: 1px solid blue; */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0, 0.75)), url('./photo/concert3.jpg');
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 4px 4px 4px gray;
+
+}
+
+.left_form h2
+{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'lobster', cursive;
+    text-shadow: 1px 1px 2px goldenrod;
+}
+
+.left_form .photo
+{
+    height: 70%;
+    width: 90%;
+    padding: 5px 10px;
+    margin-left: 30px; 
+    margin-top: 20px;
+
+}
+
+.photo img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+    box-shadow: 2px 2px 5px gray;
+    margin:0px 35px;
+}
+
+.photo .guru
+{
+    margin-top: 100px;
+}
+
+
+
+.container .right_form
+{
+    height: 400px;
+    width: 40%;
+    /* border: 1px solid orange; */
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.right_form .form
+{
+    display: grid;
+    place-items: center;
+    padding: 5px 10px;
+}
+
+.form h3
+{
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gray;
+    font-family: 'lobster', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.form input
+{
+    margin-top: 15px;
+    width: 60%;
+    border-radius: 20px;
+    background: none;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid gray;
+    
+
+}
+
+.form button
+{
+    margin-top: 25px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    background: white;
+    font-weight: bold;
+    color: maroon;
+
+}
+
+.form .logoimg
+{
+    height: 130px;
+    width: 170px;
+}
+
+.guesth1
+{
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gray;
+    font-size: 40px;
+    margin-left: 45%;
+    margin-top: 70px;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    border-bottom: 4px solid gray;
+    width: fit-content;
+    padding: 10px;
+}
+
+
+
+header button
+{
+    padding: 2px 15px ;
+    background: transparent;
+    border: 2px solid white;
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: -50px;
+    text-shadow: 1px 1px 1px gold;
+    margin-left: 45%;
+    font-weight: bold;
+}
+
+header button:hover
+{
+    background-color: orange;
+}
+
+/* GUest Section  */
+
+.guest
+{
+    height: 40vh;
+    margin-top: 60px;
+    width: 80vw;
+    /* border: 1px solid gray; */
+    box-shadow: 2px 2px 3px gray;
+    margin-left:130px;
+    display: flex;
+  
+}
+
+.guest .left 
+{
+    height: 40vh;
+    width: 20vw;
+    /* border: 1px solid blue; */
+    display: grid;
+    place-items: center;
+    background-color: rgb(2, 2, 49);
+}
+
+.left img
+{
+    height: 35vh;
+    width: 18vw;
+    border-radius: 0px;
+    background-color: whitesmoke;
+}
+
+.guest .right
+{
+    height: 40vh;
+    width: 70vw;
+    /* border: 1px solid orange; */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/confett.jpg');
+    background-position: top;
+    background-size: cover;
+    color: whitesmoke;
+
+}
+
+.guest .right h1
+{
+    font-family: 'Dosis', cursive;
+    color:darkcyan;
+    text-shadow: 1px 1px 2px whitesmoke;
+    word-spacing: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.guest .right p
+{
+    margin: 50px 20px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px gray;
+}
+
+ /* Celebrity section  */
+
+ .celeb
+ {
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gray;
+    font-size: 40px;
+    margin-left: 45%;
+    margin-top: 70px;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    border-bottom: 4px solid gray;
+    width: fit-content;
+    padding: 10px;
+
+ }
+
+ .celebrity
+ {
+     height:50vh;
+     width: 100vw;
+     display: flex;
+     align-items: center;     
+     /* justify-content: center; */
+    margin-top: 50px;
+     /* border: 1px solid gold; */
+ }
+
+ .celebrity .celebrityinfo
+ {
+     height: 50vh;
+     width: 60vw;
+     /* border: 1px solid blue; */
+     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/concert1.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 600;
+     color: whitesmoke;
+
+ }
+
+.celebrityinfo h1
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px gray;
+
+}
+
+.celebrityinfo h3
+{
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+    padding-top: 10px;
+    color: darkcyan;
+    word-spacing: 4px;
+}
+
+
+.celebrityinfo p
+{
+    margin-left: 20px;
+    color: orange;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px gray;
+
+}
+
+.celebrityinfo h5
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gray;
+ 
+
+}
+
+.celebrityinfo ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    list-style: none;
+} 
+
+.celebrityinfo li
+{
+    border: 2px solid goldenrod;
+    padding: 5px 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px gray;
+
+}
+
+.celebrityinfo a
+{
+    text-decoration: none;
+    color: orange;
+   
+} 
+
+
+.celebrityinfo h4
+{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'lobster' , cursive;
+}
+
+.celebrityinfo span 
+{
+    margin-left: 10px;
+    transition: 2s all ease-in-out;
+    
+}
+
+span:hover
+{
+    transform: scale(1.2);
+}
+
+.fa-facebook-square
+{
+    color: #4267B2;
+}
+
+.fa-twitter
+{
+    color: 	#1DA1F2;
+}
+
+.fa-youtube
+{
+    color: #FF0000;
+}
+
+.fa-linkedin-in
+{
+ color: #0077b5 ;
+ 
+}
+
+.fa-instagram
+{
+    color: #fbad50 ;
+}
+
+
+ .celebrity .carousel
+ {
+     height: 50vh;
+     width: 40vw;
+ }
+
+ .celebrity .carousel img
+ {
+    height: 50vh;
+    width: 30vw;
+    background-position: center;
+    background-size: cover;
+
+ }
+
+ .celebrity .carousel p
+ {
+     color: goldenrod;
+     text-shadow: 1px 1px 1px black;
+ }
+
+
+/* GAlllery section  */
+
+.gallery 
+{
+
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gray;
+    font-size: 40px;
+
+}
+
+.Gallery_div
+{
+    width: 100vw;
+    margin: 80px auto 50px;
+    /* border: 1px solid orange; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-gap: 30px;
+
+
+}
+
+.Gallery_div img
+{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 3px 3px 7px whitesmoke;
+    opacity: 0.95;
+}
+
+.Gallery_div img:hover
+{
+    transform: scale(0.8)  rotate(-15deg);
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+
+
+/* Food Menu   */
+
+.slide-right {
+
+    border: 1px solid gray;
+    width: 50%;
+   
+    
+  }
+  
+  .slide-right h2
+  {
+	color: Gold;
+	text-shadow: 1px 1px 1px gray;
+	font-size: 20px;
+	animation: aage 4s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes aage{
+  from {padding-left: 200px;}
+  to {margin-right: 0px;}
+}
+
+/* Footer  */
+
+footer
+{
+    background: #393939;
+    border: 2px solid black;
+    height: 30vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
+}
+
+.social h1
+{
+    color: whitesmoke;
+    font-size: 40px;
+    padding-left: 40px;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.social h4
+{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.social a
+{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 10px;
+
+}
+
+footer p
+{
+    color: whitesmoke;
+}

@@ -1,0 +1,993 @@
+*
+{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html
+{
+    font-size: 65.5%;
+}
+
+@media(max-width:1023px){
+
+    html
+    {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:900px){
+
+    html
+    {
+        font-size: 50%;
+    }
+}
+
+
+
+@media(max-width:768px){
+
+    html
+    {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500){
+
+    html
+    {
+        font-size: 40%;
+
+    }
+    header .head1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* @media(max-width:400px){
+
+    html
+    {
+        font-size: 35%;
+    }
+} */
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 145rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/confett.jpg');
+    background-position:bottom;
+    z-index: -1;
+    height: 70rem;
+    background-size: cover;
+}
+
+.navbar
+{
+    height: 13.0 rem;
+    width: 145rem;
+    /* border: 1rem solid red; */
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.navbar .nav_left
+{
+    height: 13.0rem;
+    width: 30rem;
+    /* border: .1rem solid blue; */
+    margin-top: -3.0rem;
+    display: flex;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+ 
+.nav_left .logoimg
+{
+    height: 12.0rem;
+    width: 15.0rem;
+}
+
+.nav_left h3
+{
+    padding-top: 5.0rem;
+    font-size: 3.3rem;
+    text-shadow: 1rem 1rem 2rem gold;
+    font-family: 'Balthazar', serif;
+}
+
+.navbar .mid
+{
+    width: 80rem;
+    height: 13.0rem;
+    /* border: .1rem solid orange; */
+}
+
+.mid ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.0rem;
+    list-style-type: none;
+
+}
+
+.mid a
+{
+    text-decoration:none;
+    color: whitesmoke;
+    text-shadow: .1rem .1rem .1rem goldenrod;
+    font-size: 2.3rem;
+    font-weight: bold;
+    
+}
+
+.mid a:hover
+{
+    color: goldenrod;
+
+}
+
+.navbar .nav_right 
+{
+    width: 30rem;
+    height: 13.0rem;
+    /* border: .1rem solid pink; */
+   
+}
+
+.nav_right p
+{
+    display: flex;
+    margin-top: 3.0rem;
+    margin-left: 13.0rem;
+    font-size: 2.5rem;
+}
+
+.nav_right a
+{
+    color: whitesmoke ;
+    text-shadow: .1rem .1rem .2rem gray;
+    padding-right: 3.2rem;
+
+}
+
+
+
+/* Heading Division Section  */
+
+header .head1
+{
+    height: 45rem;
+    width: 135rem;
+    /* border: .1rem solid blue; */
+    margin-top: .8rem;
+    margin-left: 8.0rem;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
+.head1 .head1_left
+{
+    height: 35.0rem;
+    width: 60.0rem;
+    /* border: .1rem solid orange; */
+    margin-left: 1.0rem;
+    margin-top:5.0rem;
+    display: flex;
+}
+
+.head1_left p
+{
+    color: whitesmoke;
+    text-shadow: .1rem .1rem .1rem black;
+    padding:1.0rem;
+    writing-mode:vertical-rl;
+    font-size: 2.1rem;
+    background-color:;
+    height: fit-content;
+}
+
+.head1_left .days
+{
+    height: 17.0rem;
+    width: 13.0rem;
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    text-shadow: .2rem .2rem .3rem black;
+    padding: .5rem;
+    /* font-size: 5rem; */
+}
+
+.head1_left .days h1
+{
+    font-size: 4rem;
+}
+
+
+.head1 .head1_right
+{
+    height: 40rem;
+    margin-top: 2.0rem;
+    margin-left: 7.0rem;
+    width: 60rem;
+    /* border: .1rem solid green; */
+    color: whitesmoke;
+}
+
+.head1_right h1
+{
+    font-family: 'Lobster', cursive;
+    color: #F56040;
+    font-size: 4.5rem;
+    padding-top: 1.0rem;
+    text-shadow: .2rem .1rem .2rem  #F77737;
+    text-align: center;
+}
+
+.head1_right .venue
+{
+    height: 28.3rem;
+    width: 50.0rem;
+    border-right: .3rem solid darkcyan;
+    border-left: .3rem solid darkcyan;
+    border-bottom: .3rem solid darkcyan;
+    margin-top: 2.0rem;
+    margin-left: 5.0rem;
+}
+
+.venue h2{
+    text-align: center;
+    font-size: 6.5rem;
+    padding-top: 3.rem;
+    font-family: 'Zilla Slab', serif;
+    text-shadow: .2rem .1rem .3rem goldenrod;
+}
+
+.venue p
+{
+ background-color: darkcyan;
+ width: fit-content;
+ margin-left: 6.0rem;
+ font-size: 1.8rem;
+ padding: .5rem .5rem;
+ margin-top: 2rem;
+
+
+}
+
+.venue .time
+{
+    height: 3.0rem;
+    width: 35rem;
+    background: whitesmoke;
+    margin-top: 5.2rem;
+    border-radius: .5rem;
+    /* box-shadow: .1rem .1rem .2rem goldenrod; */
+    color: maroon;
+    margin-left: 9.0rem;
+    display: grid;
+    place-items: center;
+    
+}
+
+.time h6
+{
+    text-align: center;
+    text-shadow: .1rem .1rem .1rem gray;
+    word-spacing: .3rem;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding-top: .2rem;
+}
+
+.head1_left .count 
+{
+    height: 6rem;
+    width: 50rem;
+    margin-right: 8.0rem;
+    border: .1rem solid whitesmoke;
+    box-shadow: .2rem .2rem .4rem gray;
+    border-radius:.8rem;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    text-shadow: .1rem .2rem .2rem goldenrod;
+    margin-top: 25.0rem;
+    word-spacing: 1.0rem;
+    padding: .5rem 1.0rem;
+
+
+}
+
+
+/* Register Div  */
+
+.container
+{
+    /* border: .1rem solid red; */
+    width: 140rem ;
+    height: 37.0rem;
+    margin-top: 15rem;
+    display: flex;
+    margin-left:rem;
+   
+}
+
+.container .left_form
+{
+    width: 90rem;
+    height: 37.0rem;
+    /* border: 1rem solid blue; */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0, 0.75)), url('./photo/concert3.jpg');
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: .4rem .4rem .4rem gray;
+
+}
+
+.left_form h2
+{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 1.0rem;
+    font-family: 'lobster', cursive;
+    text-shadow: .1rem .1rem .2rem goldenrod;
+}
+
+.left_form .photo
+{
+    height: 90rem;
+    width: 70rem;
+    padding: .5rem 1.0rem;
+    margin-left: 3.0rem; 
+    margin-top: 1.2rem;
+    display: flex;
+
+}
+
+.photo img
+{
+    height: 15.0rem;
+    width: 15.0rem;
+    border-radius: 20rem;
+    border: .5rem solid goldenrod;
+    box-shadow: .2rem .2rem .5rem gray;
+    margin:0rem 3.5rem;
+}
+
+.photo .guru
+{
+    margin-top: 10.0rem;
+}
+
+
+
+.container .right_form
+{
+    height: 37.0rem;
+    width: 46rem;
+    /* border: .1rem solid orange; */
+    background-color: whitesmoke;
+    box-shadow: .4rem .4rem .4rem gray;
+}
+
+.right_form .form
+{
+    display: grid;
+    place-items: center;
+    padding: .5rem .5rem;
+    width: 50rem;
+}
+
+.form h3
+{
+    color: goldenrod;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-family: 'lobster', cursive;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 2.3rem;
+}
+
+.form input
+{
+    margin-top: 1rem;
+    width: 60%;
+    border-radius: 2.0rem;
+    background: none;
+    text-align: center;
+    border: none;
+    border-bottom: .3rem solid gray;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+
+}
+
+.form button
+{
+    margin-top: 2rem;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 2.0rem;
+    border: .2rem solid goldenrod;
+    background: white;
+    font-weight: bold;
+    color: maroon;
+
+}
+
+.form .logoimg
+{
+    height: 13.0rem;
+    width: 17.0rem;
+}
+
+.guesth1
+{
+    color: goldenrod;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-size: 4.0rem;
+    margin-left: 65rem;
+    margin-top: 7.0rem;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    border-bottom: .4rem solid gray;
+    width: fit-content;
+    padding: 1.0rem;
+}
+
+
+
+header button
+{
+    padding: .2rem 1rem ;
+    background: transparent;
+    border: .2rem solid white;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin-top: -6rem;
+    text-shadow: .1rem .1rem .1rem gold;
+    margin-left: 65rem;
+    font-weight: bold;
+}
+
+header button:hover
+{
+    background-color: orange;
+}
+
+/* GUest Section  */
+
+.guest
+{
+    height: 28rem;
+    margin-top: 6.0rem;
+    width: 110rem;
+    border: .1rem solid gray;
+    box-shadow: .2rem .2rem .3rem gray;
+    margin-left:18rem;
+    display: flex;
+  
+}
+
+.guest .left 
+{
+    height: 28rem;
+    width: 30rem;
+    /* border: .1rem solid blue; */
+    display: grid;
+    place-items: center;
+    background-color: rgb(2, 2, 49);
+}
+
+.left img
+{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 0rem;
+    background-color: whitesmoke;
+}
+
+.guest .right
+{
+    height: 28rem;
+    width: 80rem;
+    /* border: .1rem solid orange; */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/confett.jpg');
+    background-position: top;
+    background-size: cover;
+    color: whitesmoke;
+
+}
+
+.guest .right h1
+{
+    font-family: 'Dosis', cursive;
+    color:darkcyan;
+    text-shadow: .1rem .1rem .2rem whitesmoke;
+    word-spacing: .4rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+
+.guest .right p
+{
+    margin: 5.0rem 2.0rem;
+    font-size: 1.8rem;
+    color: whitesmoke;
+    text-shadow: .1rem .1rem .1rem gray;
+}
+
+ /* Celebrity section  */
+
+ .celeb
+ {
+    color: goldenrod;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-size: 4.0rem;
+    margin-left: 60rem;
+    margin-top: 7.0rem;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    border-bottom: .4rem solid gray;
+    width: fit-content;
+    padding: 1.0rem;
+
+ }
+
+ .celebrity
+ {
+     height:40rem;
+     width: 145rem;
+     display: flex;
+     align-items: center;     
+     /* justify-content: center; */
+    margin-top: 5.0rem;
+     border: .1rem solid gold;
+ }
+
+ .celebrity .celebrityinfo
+ {
+     height: 40rem;
+     width: 100rem;
+     /* border: .1rem solid blue; */
+     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./photo/concert1.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 600;
+     color: whitesmoke;
+
+ }
+
+.celebrityinfo h1
+{
+    margin-left: 2.0rem;
+    margin-top: 2rem;
+    color: whitesmoke;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-size: 3rem;
+
+}
+
+.celebrityinfo h3
+{
+    text-align: center;
+    text-shadow: .1rem .1rem .2rem gray;
+    padding-top: 1.5rem;
+    color: darkcyan;
+    word-spacing: .4rem;
+    font-size: 2.5rem;
+}
+
+
+.celebrityinfo p
+{
+    margin-left: 2.0rem;
+    color: orange;
+    margin-top: 2rem;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-size: 2.5rem;
+
+}
+
+.celebrityinfo h5
+{
+    text-align: center;
+    font-size: 3.0rem;
+    margin-top: 3rem;
+    color: goldenrod;
+    font-size: 4rem;
+    text-shadow: .1rem .1rem .2rem gray;
+ 
+
+}
+
+.celebrityinfo ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.0rem;
+    list-style: none;
+} 
+
+.celebrityinfo li
+{
+    border: .2rem solid goldenrod;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: .1rem .1rem .2rem gray;
+
+}
+
+.celebrityinfo a
+{
+    text-decoration: none;
+    color: orange;
+    font-size: 3rem;
+   
+} 
+
+
+.celebrityinfo h4
+{
+    text-align: center;
+    margin-top: 3.0rem;
+    font-family: 'lobster' , cursive;
+    font-size: 2.5rem;
+}
+
+.celebrityinfo span 
+{
+    margin-left: 1.0rem;
+    transition: 2s all ease-in-out;
+    
+}
+
+span:hover
+{
+    transform: scale(1.2);
+}
+
+.fa-facebook-square
+{
+    color: #4267B2;
+}
+
+.fa-twitter
+{
+    color: 	#1DA1F2;
+}
+
+.fa-youtube
+{
+    color: #FF0000;
+}
+
+.fa-linkedin-in
+{
+ color: #0077b5 ;
+ 
+}
+
+.fa-instagram
+{
+    color: #fbad50 ;
+}
+
+
+ .celebrity .carousel
+ {
+     height: 40rem;
+     width: 60rem;
+ }
+
+ .celebrity .carousel img
+ {
+    height: 40rem;
+    width: 400rem;
+    background-position: center;
+    background-size: cover;
+
+ }
+
+ .celebrity .carousel p
+ {
+     color: goldenrod;
+     text-shadow: .1rem .1rem .1rem black;
+ }
+
+
+
+ /* Foods section  */
+
+#food
+{
+    margin-left: 63rem;
+    font-size: 3rem;
+    margin-top: 4rem;
+    color: darkcyan;
+    text-shadow: .1rem .1rem .1rem gray;
+    font-family: 'Lobster' cursive;
+}
+
+ .foods
+ {
+     /* border: .1rem solid red; */
+    width: 140rem ;
+    height: 37.0rem;
+    margin-left: 2rem;
+    box-shadow: .2rem .2rem .3rem gray;
+    margin-top: 6rem;
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('./photo/buffet.jpg');
+    background-size: cover;
+ }
+
+ .foods .aboutfood
+ {
+     height: 37rem ;
+     width: 92rem;
+     /* border: .1rem solid orange; */
+ }
+
+ .aboutfood h2
+ {
+     text-align: center;
+     padding: 2rem;
+     color: #ac8e48;;
+ }
+
+ .aboutfood .offer
+ {
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+     
+ }
+
+ .offer .midoffer
+ {
+     margin-left: -8rem;
+ }
+
+ .aboutfood h4
+ {
+     color: whitesmoke;
+     background-color: transparent;
+     padding: 1rem;
+     font-weight: bolder;
+
+ }
+
+ .aboutfood h5{
+     color: #ac8e48;
+     font-size: 2.5rem;
+     font-weight: bold;
+     margin-top: 2.5rem;
+     word-spacing: .5rem;
+     /* margin-left: 2rem; */
+ }
+
+ .aboutfood p
+ {
+     margin-top: 1.2rem;
+     color:darkcyan;
+     margin-left: 3rem;
+     font-size: 1.5rem;
+ }
+
+
+ .foods .foodmenu
+ {
+    height: 37rem ;
+    width: 48rem;
+    /* border: .1rem solid blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.0rem , 1fr));
+    grid-gap:1rem;
+    place-items: center;
+    background-color: whitesmoke;
+
+ }
+
+
+ .foodmenu img
+ {
+     height: 16rem;
+     width: 16rem;
+     border-radius: 1rem;
+     transition: 1s;
+ }
+
+ .foodmenu img:hover
+ {
+     transform: scale(0.8) rotate(-10deg);
+     box-shadow: .2rem .2rem .3rem gray;
+     
+ }
+
+
+
+/* GAllery section  */
+
+.gallery 
+{
+
+    margin-left: 65rem;
+    font-size: 3.0rem;
+    margin-top: 5.0rem;
+    color: goldenrod;
+    text-shadow: .1rem .1rem .2rem gray;
+    font-size: 4.0rem;
+
+}
+
+.Gallery_div
+{
+    width: 145rem;
+    margin: 8.0rem auto 5.0rem;
+    /* border: .1rem solid orange; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30.0rem , 1fr));
+    grid-gap: 3.0rem;
+
+
+}
+
+.Gallery_div img
+{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: .3rem .3rem .7rem whitesmoke;
+    opacity: 0.95;
+}
+
+.Gallery_div img:hover
+{
+    transform: scale(0.8)  rotate(-15deg);
+    box-shadow: .2rem .2rem .7rem gray;
+    border-radius: 2.0rem;
+    opacity: 1;
+}
+
+
+/* Footer  */
+
+footer
+{
+    background: #272727;
+    /* border: .2rem solid black; */
+    height: 30rem;
+    width: 145rem;
+    
+}
+
+footer h3
+{
+ color: maroon;
+ text-shadow: 1px 1px 1px gray;
+}
+
+footer .foot
+{
+    height: 25rem;
+    width: 140rem;
+    /* border: .1rem solid orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.foot .social
+{
+    width: 50rem;
+    /* border: .1rem solid red; */
+    display: grid;
+    place-items: center;
+    height: 12rem;
+
+}
+
+.social h1
+{
+    color: whitesmoke;
+    font-family: 'Lobster', cursive ;
+    font-size: 4.0rem;
+    padding-left: 4.0rem;
+}
+
+.social h4
+{
+    margin-top: 3.0rem;
+    margin-left: 3rem;
+}
+
+.social h4 a
+{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 2.0rem;
+    margin-right: 3rem;
+    color: whitesmoke;
+    text-shadow:.1rem .1rem .1rem whitesmoke ;
+
+}
+
+.social h4 a:hover
+{
+    color: gray;
+}
+
+.foot .playstore
+{
+    height: 10rem;
+    width: 50rem;
+    /* border: .1rem solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.playstore img
+{
+    height: 5.5rem;
+    width: 12rem;
+}
+
+footer .copyright
+{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(70, 68, 68) ;
+    align-items: center;
+    border-bottom: .1rem solid whitesmoke;
+    height: 2.5rem;
+}
+
+footer p
+{
+    color: whitesmoke;
+    font-size: 1.4rem;
+    text-align: left;
+    
+}
+
+.foot_icon 
+{
+    margin-right: 2rem;
+}
+
+.foot_icon a
+{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 1.0rem;
+
+
+}
