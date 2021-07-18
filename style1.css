@@ -58,6 +58,7 @@ html
     }
 } */
 
+
 header::before {
     content: "";
     position: absolute;
@@ -885,7 +886,7 @@ footer
 
 footer h3
 {
- color: maroon;
+ color: red;
  text-shadow: 1px 1px 1px gray;
 }
 
@@ -904,7 +905,7 @@ footer .foot
 
 .foot .social
 {
-    width: 50rem;
+    width: 70rem;
     /* border: .1rem solid red; */
     display: grid;
     place-items: center;
@@ -931,8 +932,8 @@ footer .foot
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
-    word-spacing: 2.0rem;
-    margin-right: 3rem;
+    word-spacing: 3rem;
+    margin-right: 4rem;
     color: whitesmoke;
     text-shadow:.1rem .1rem .1rem whitesmoke ;
 
@@ -974,6 +975,7 @@ footer p
     color: whitesmoke;
     font-size: 1.4rem;
     text-align: left;
+    margin-top: .5rem;
     
 }
 

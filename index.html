@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/285b72677f.js" crossorigin="anonymous"></script>
 
     
@@ -18,6 +16,7 @@
     <title> PHCET EUFORIA </title>
 </head>
 <body>
+
     
     <header>
         <div class="navbar">
@@ -33,7 +32,7 @@
                    <a href="#">  <li>Home</li></a>
                    <a href="#about"><li>About </li> </a> 
                    <a href="#gallery">  <li> Gallery </li></a> 
-                   <a href="#"> <li>News</li> </a> 
+                   <a href="#guest"> <li>Guest</li> </a> 
                    <a href="#concert"> <li>Consert</li></a> 
                    <a href="#food"> <li>Features</li> </a> 
 
@@ -122,7 +121,7 @@
            </div>
     </div>
 
-    <h1 class="guesth1">GUEST</h1>
+    <h1 class="guesth1" id="guest">GUEST</h1>
 
   <div class="guest" data-aos="fade-right">
         <div class="left">
@@ -140,6 +139,7 @@
 
         </div>
   </div>
+
 
 
   <div class="guest" data-aos="fade-left">
@@ -160,7 +160,7 @@
 
 <h1 class="celeb" id="concert"> ARTISTS </h1>
 
-<div class="celebrity" data-aos="fade-right" >
+<div class="celebrity" data-aos="fade-right"  >
 
     <div class="celebrityinfo">
 
@@ -283,6 +283,7 @@
 
 <div class="Gallery_div">
 
+
     <img src="./photo/concert3.jpg" alt="">
     <img src="./photo/concert5.jpg" alt="">
     <img src="./photo/concert7.jpg" alt="">
@@ -297,13 +298,6 @@
 </div>
 
 
-<!-- 
-<div class="slide-right">
-  <h2>College ID is Mandatory While Entering Event </h2>
-</div>
- -->
-
-
 <footer>
 
 
@@ -316,11 +310,12 @@
 
       <h1>PHCET</h1>
       <h4>
-           <a href="#">Home</a>
-           <a href="#">About</a>
-           <a href="#">Service</a>
-           <a href="#">Gallery</a>
-           <a href="#">Contact</a>
+        <a href="#"> Home</a>
+        <a href="#"> About  </a> 
+        <a href="#guest">Guest </a> 
+        <a href="#food">Features </a> 
+        <a href="#">Help </a> 
+        
       </h4>
      </div>
 
@@ -361,9 +356,30 @@
     );
   </script>
 
+  <script>
+    var countDate = new Date("Aug 25 , 2021 00:00:00").getTime();
+
+    var x = setInterval(function(){
+
+    var now = new Date().getTime();
+    var difference = countDate - now;
+
+    var days =Math.floor(difference / (1000*60*60*24));
+    var hours = Math.floor(difference % (1000*60*60*24)/ (1000*60*60));
+    var minutes = Math.floor(difference % (1000*60*60)/ (1000*60));
+    var seconds = Math.floor(difference % (1000*60)/ (1000));
+
+    document.getElementById("countdown").innerHTML= days + "D " + hours +"H " + minutes + "M "+ seconds +"S ";
 
 
-    <script src="index.js"></script>
+},1000);
+
+
+  </script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
